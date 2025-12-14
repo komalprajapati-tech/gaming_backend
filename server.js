@@ -55,10 +55,10 @@ app.get(/^\/hackathon\/.*/, (req, res) => {
 
 // 🛠️ ADMIN PANEL
 app.use(
-  '/admin-panel',
+  '/admin_panel',
   express.static(path.join(__dirname, 'dist/admin_panel/browser'))
 );
-app.get(/^\/admin-panel\/.*/, (req, res) => {
+app.get(/^\/admin_panel\/.*/, (req, res) => {
   res.sendFile(
     path.join(__dirname, 'dist/admin_panel/browser/index.html')
   );
